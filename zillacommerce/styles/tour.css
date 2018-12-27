@@ -1,0 +1,202 @@
+.zilla-shopify-tour-background {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+  .zilla-shopify-tour.tour-start .zilla-shopify-tour-background {
+    opacity: 1;
+    visibility: visible; }
+
+.zilla-shopify-tour-modal {
+  max-width: 48.75rem;
+  margin: 0 auto;
+  padding-top: 1px;
+  background-color: #ffffff;
+  border: 1px solid #485561;
+  border-top: 0;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate3d(0, -20px, 0);
+          transform: translate3d(0, -20px, 0);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .zilla-shopify-tour.tour-start .zilla-shopify-tour-modal {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible; }
+  .zilla-shopify-tour-modal .emblem {
+    margin: 4.375rem auto 3.125rem auto;
+    display: block; }
+  .zilla-shopify-tour-modal h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 2.1875rem;
+    color: #485561;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center; }
+  .zilla-shopify-tour-modal p {
+    margin: 0 100px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #758086;
+    line-height: 1.625rem; }
+  .zilla-shopify-tour-modal a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #758086;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
+    .zilla-shopify-tour-modal a:hover {
+      color: #37464f;
+      border-bottom-color: #37464f; }
+  .zilla-shopify-tour-modal .lead {
+    font-size: 1.0625rem;
+    color: #758086;
+    line-height: 1.8125rem;
+    margin-bottom: 2.5rem; }
+
+.landing-actions button {
+  border-radius: 4px;
+  background: #f6f9fa;
+  padding: 0.625rem 0.9375rem;
+  font-size: 0.8125rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  margin: 0 0.9375rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+  .landing-actions button:hover {
+    opacity: 0.9; }
+  .landing-actions button:focus {
+    outline: none; }
+  .landing-actions button:active {
+    position: relative;
+    top: 1px; }
+  .landing-actions button.decline {
+    background-color: #f6f9fa;
+    color: #758086; }
+  .landing-actions button.start {
+    background-color: #2eb8ce;
+    color: #ffffff; }
+
+.landing-actions {
+  padding: 2.5rem 0;
+  margin-top: 4.0625rem;
+  border-top: 1px solid #e6edf0;
+  text-align: center; }
+
+.zilla-shopify-tour-step {
+  position: absolute;
+  left: 18.125rem;
+  width: 16.25rem;
+  padding: 0.625rem 1.25rem 0;
+  background: #ffffff;
+  z-index: 500000;
+  border: 1px solid #cad0d4;
+  border-radius: 3px;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.11);
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in; }
+  .zilla-shopify-tour-step.visible {
+    opacity: 1;
+    visibility: visible; }
+  .zilla-shopify-tour-step:after, .zilla-shopify-tour-step:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in; }
+  .zilla-shopify-tour-step.tether-element-attached-middle:after, .zilla-shopify-tour-step.tether-element-attached-middle:before {
+    opacity: 1; }
+  .zilla-shopify-tour-step.tether-element-attached-top:after, .zilla-shopify-tour-step.tether-element-attached-top:before {
+    top: 0.625rem;
+    opacity: 1; }
+  .zilla-shopify-tour-step:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 7px;
+    margin-top: -7px; }
+  .zilla-shopify-tour-step:before {
+    border-color: rgba(187, 187, 187, 0);
+    border-right-color: #cad0d4;
+    border-width: 8px;
+    margin-top: -8px; }
+  .zilla-shopify-tour-step h3 {
+    margin: 5px 0;
+    font-size: 1.1875rem;
+    color: #758086;
+    line-height: 1.625rem;
+    font-weight: 100; }
+  .zilla-shopify-tour-step p {
+    margin: 0;
+    margin-bottom: 0.625rem;
+    font-size: 0.8125rem;
+    color: #485561;
+    line-height: 1.375rem; }
+    .zilla-shopify-tour-step p:last-child {
+      margin-bottom: 0; }
+  .zilla-shopify-tour-step ul {
+    list-style-type: disc;
+    margin-left: 1.0625rem;
+    font-size: 0.6875rem;
+    color: #485561; }
+
+.zilla-shopify-tour-step .nav-buttons {
+  margin: 0.9375rem -1.25rem 0 -1.25rem;
+  border-top: 1px solid #f6f9fa; }
+  .zilla-shopify-tour-step .nav-buttons button {
+    border: none;
+    background: transparent;
+    width: 50%;
+    padding: 0.6875rem 0;
+    margin: 0;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #56c7d9;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
+    .zilla-shopify-tour-step .nav-buttons button.full {
+      width: 100%; }
+    .zilla-shopify-tour-step .nav-buttons button.prev-step {
+      border-right: 1px solid #f6f9fa; }
+    .zilla-shopify-tour-step .nav-buttons button:focus {
+      outline: none; }
+    .zilla-shopify-tour-step .nav-buttons button:hover {
+      color: #2593a4; }

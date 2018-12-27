@@ -1,0 +1,26 @@
+/**
+ * Admin styles
+ */
+
+#zilla-metabox-post-link .zilla-metabox-left {
+  display: none;
+}
+
+#zilla-metabox-post-link .zilla-metabox-right {
+  width: 100%;
+}
+
+#customize-control-show_title_instead_of_logo label,
+#customize-control-always_display_mobile_menu label {
+  display: block;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.disclaimer {
+  color: #d54e21;
+}
+
+.shopify-modal {
+  float: right;
+}

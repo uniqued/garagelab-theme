@@ -1,0 +1,9 @@
+.zillacommerce-admin {
+  width: 100%;
+  height: calc(100vh - 50px); }
+
+#zillacommerce-add-product > img {
+  padding: 0 4px 2px; }
+
+#toplevel_page_shopify-settings .wp-menu-image img {
+  padding-top: 7px; }
