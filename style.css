@@ -1856,7 +1856,9 @@ h4.post-all-posts-single-title a {
   .archive-category-container.open {
     color: #fff;
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
+    border-bottom-right-radius: 0;
+    line-height: 0.8;
+}
 
 .archive-current-category {
   padding-left: 0.9375rem;
