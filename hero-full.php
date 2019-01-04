@@ -14,7 +14,11 @@ $subtitle             = get_post_meta( $post->ID, '_zilla_subtitle', true );
 $archive_title      = get_theme_mod( 'archive_title', 'Posts' );
 $archive_subtitle   = get_theme_mod( 'archive_subtitle', '' );
 $archive_image      = get_theme_mod( 'archive_featured_image', '' );
-
+if ( is_page() && !is_home() ) :
+  $header_background = $archive_image;
+else :
+  $header_background = wp_get_attachment_url( get_post_thumbnail_id() );
+endif;
 
   //$header_background = Image aus Hero Plugin
   $hero_id = love_hero_get_hero_id();
