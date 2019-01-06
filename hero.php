@@ -68,7 +68,7 @@ endif;
             <p class="lead"><?php echo esc_html( $portfolio_subtitle ); ?></p>
           <?php endif; ?>
         <?php elseif ( is_404() ) : ?>
-          <h1><?php _e( 'Nothing Found.' ); ?></h1>
+          <h1><?php _e( 'Leider nichts gefunden.' ); ?></h1>
         <?php elseif ( is_search() ) : ?>
           <h1 class="page-title"><?php printf( __( 'Ergebnisse für: %s', 'hype' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
         <?php elseif ( is_archive() && get_post_type() === 'post' ) : ?>
