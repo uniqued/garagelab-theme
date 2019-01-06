@@ -3465,6 +3465,11 @@ input[type="checkbox"]{
     text-align: left;
     color: #758086;
 }
+.sow-accordion-title {
+	  font-family: "Baloo", sans-serif; 
+  font-size: 1.5rem;	
+  font-weight: 700;
+}
 sow-accordion-panel-header{
 	 overflow: auto;
     max-width: 50rem;
