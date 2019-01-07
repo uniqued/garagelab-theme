@@ -36,9 +36,6 @@ if ( ! empty( $header_background ) ): ?>
     .page-template-page-cover .hero {
       background-image: url(<?php echo $header_background ?>);
     }
-	  .page-template-page-with-hero .hero {
-      background-image: url(<?php echo $header_background ?>);
-    }
   </style>
   <?php
 endif;
@@ -76,7 +73,7 @@ endif;
         <?php endif; ?>
         <a href="#main"
           <?php if ( is_page_template( 'page-cover.php' ) || is_home() || is_page_template( 'page-with-hero.php' ) ) : ?>
-            data-start="opacity: 1; z-index:2;"
+		    data-start="opacity: 1; z-index:2;"
             data-center-bottom="opacity: 0; z-index: -1;"
             data-anchor-target=".skrollr-content" class="hero-down-arrow"
           <?php endif; ?>
